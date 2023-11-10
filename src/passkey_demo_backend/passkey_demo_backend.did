@@ -1,3 +1,4 @@
+type Result = variant { Ok; Err : text };
 service : {
-    "greet": (text) -> (text) query;
+    authenticate : (principal) -> (Result) query;
 }
