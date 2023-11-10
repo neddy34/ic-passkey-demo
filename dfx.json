@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "passkey_demo_backend": {
+      "candid": "src/passkey_demo_backend/passkey_demo_backend.did",
+      "package": "passkey_demo_backend",
+      "type": "rust"
+    },
+    "passkey_demo_frontend": {
+      "dependencies": [
+        "passkey_demo_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/passkey_demo_frontend/src/index.html"
+      },
+      "source": [
+        "src/passkey_demo_frontend/assets",
+        "dist/passkey_demo_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

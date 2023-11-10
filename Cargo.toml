@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/passkey_demo_backend",
+]
